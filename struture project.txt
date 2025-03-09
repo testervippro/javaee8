@@ -1,0 +1,39 @@
+javaee8-project/
+│── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/app/
+│   │   │       ├── config/         # Configuration classes (CDI, JPA, Security)
+│   │   │       │   ├── AppConfig.java
+│   │   │       │   ├── PersistenceConfig.java
+│   │   │       │   ├── SecurityConfig.java
+│   │   │       ├── model/          # Entity classes (JPA)
+│   │   │       │   ├── User.java
+│   │   │       ├── dao/            # Data Access Layer (DAO)
+│   │   │       │   ├── UserDao.java
+│   │   │       ├── service/        # Business Logic Layer
+│   │   │       │   ├── UserService.java
+│   │   │       ├── rest/           # REST API Layer (JAX-RS)
+│   │   │       │   ├── UserResource.java
+│   │   │       ├── servlet/        # Servlet Layer (Optional)
+│   │   │       │   ├── HelloServlet.java
+│   │   │       ├── exception/      # Exception Handling
+│   │   │       │   ├── CustomException.java
+│   │   │       ├── util/           # Utility classes
+│   │   │       │   ├── AppUtil.java
+│   │   ├── resources/              # Resources (persistence.xml, application.properties)
+│   │   │   ├── META-INF/
+│   │   │   │   ├── persistence.xml
+│   │   ├── webapp/                 # Web Layer (JSP, JSF, Static Files)
+│   │   │   ├── WEB-INF/
+│   │   │   │   ├── web.xml
+│   │   │   ├── index.jsp
+│   │   │   ├── css/
+│   │   │   │   ├── styles.css
+│   │   │   ├── js/
+│   │   │   │   ├── scripts.js
+│   ├── test/                       # Unit and Integration Tests
+│   │   ├── java/com/example/app/
+│   │   │   
+│── pom.xml                          # Maven Dependencies
+│── README.md                        # Documentation

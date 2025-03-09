@@ -1,0 +1,27 @@
+mvn archetype:generate -DgroupId=com.example.app -DartifactId=javaee8-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+cd javaee8-project
+
+# Create required directories
+mkdir -p src/main/java/com/example/app/config
+mkdir -p src/main/java/com/example/app/model
+mkdir -p src/main/java/com/example/app/dao
+mkdir -p src/main/java/com/example/app/service
+mkdir -p src/main/java/com/example/app/rest
+mkdir -p src/main/java/com/example/app/servlet
+mkdir -p src/main/java/com/example/app/exception
+mkdir -p src/main/java/com/example/app/util
+mkdir -p src/main/resources/META-INF
+mkdir -p src/main/webapp/WEB-INF
+mkdir -p src/main/webapp/css
+mkdir -p src/main/webapp/js
+mkdir -p src/test/java/com/example/app
+
+# Create essential files
+touch src/main/resources/META-INF/persistence.xml
+touch src/main/webapp/WEB-INF/web.xml
+touch src/main/webapp/index.jsp
+touch src/main/webapp/css/styles.css
+touch src/main/webapp/js/scripts.js
+touch src/test/java/com/example/app/UserServiceTest.java
+touch README.md
